@@ -113,7 +113,9 @@
   #countdown .lbl { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); margin-top: 8px; }
 
   #schedule .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px; }
-  #schedule .cell { padding: 24px 14px 20px; position: relative; background: #fffdf7; border: 1px solid rgba(185, 140, 46, 0.45); border-radius: 14px; box-shadow: 0 8px 22px rgba(22, 38, 63, 0.07); }
+  #schedule .cell { padding: 24px 14px 20px; display: flex; flex-direction: column; position: relative; background: #fffdf7; border: 1px solid rgba(185, 140, 46, 0.45); border-radius: 14px; box-shadow: 0 8px 22px rgba(22, 38, 63, 0.07); }
+  #schedule .cell .vlink { margin-top: auto; }
+  #schedule .cell > :not(.vlink):not(.clickloc) { flex: 0 0 auto; }
   #schedule .ev-name { font-family: 'Alex Brush', cursive; font-size: 40px; color: var(--ink); }
   #schedule .ev-when { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.22em; margin-top: 10px; text-transform: uppercase; color: var(--soft); }
   #schedule .ev-time { font-family: 'Jost', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 0.05em; color: var(--gold-dark); margin-top: 2px; }
