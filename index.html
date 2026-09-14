@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nirbhay &amp; Riya | 5-7 December 2026</title>
+<meta property="og:title" content="Nirbhay &amp; Riya — Save the Date">
+<meta property="og:description" content="December 5, 6 &amp; 7, 2026 · Noura, The Palace, Chandigarh">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Alex+Brush&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+  :root {
+    --cream: #f7f2e6; --cream-2: #efe7d2; --ink: #16263f; --soft: #5d6470;
+    --maroon: #8a6a2a; --gold: #b98c2e; --gold-dark: #8a6a2a; --floral: #d8cba4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--cream); background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='52' height='52'><path d='M26 18l4 8-4 8-4-8z' fill='%23b98c2e' fill-opacity='0.05'/></svg>"); color: var(--ink); font-family: 'Cormorant Garamond', serif; overflow-x: hidden; }
+  section { position: relative; padding: 22px 22px; max-width: 760px; margin: 0 auto; text-align: center; }
+  section::after { content: "✦"; position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); font-size: 11px; color: var(--gold); opacity: 0.85; }
+  .flourish { display: block; margin: 22px auto 0; width: 220px; height: 14px; }
+  .topband { position: fixed; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, #0f1a2e, #16263f, #0f1a2e); border-bottom: 1px solid rgba(185, 140, 46, 0.75); z-index: 45; pointer-events: none; }
+  .sans { font-family: 'Jost', sans-serif; }
+  .caps { font-family: 'Jost', sans-serif; letter-spacing: 0.32em; text-transform: uppercase; }
+  .script { font-family: 'Alex Brush', cursive; font-weight: 400; text-transform: none !important; letter-spacing: normal !important; }
+  .maroon { color: var(--maroon); }
+  .eyebrow { font-size: 12px; color: var(--soft); }
+  h2.big { font-weight: 500; font-size: clamp(30px, 6.4vw, 46px); letter-spacing: 0.14em; display: flex; align-items: center; justify-content: center; gap: 18px; }
+  h2.big::before, h2.big::after { content: ""; height: 1px; width: 72px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  h2.big::after { background: linear-gradient(90deg, var(--gold), transparent); }
+  .bless { margin-top: 12px; font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--soft); line-height: 1.9; }
+  .bless span { font-family: 'Cormorant Garamond', serif; font-size: clamp(11px, 3.4vw, 20px); letter-spacing: 0.02em; text-transform: none; color: var(--ink); font-weight: 600; white-space: nowrap; display: inline-block; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  .floral { position: absolute; width: 128px; opacity: 0.75; pointer-events: none; }
+  .fl-tl { top: 6px; left: -22px; }
+  .fl-tr { top: 6px; right: -22px; transform: scaleX(-1); }
+  .fl-bl { bottom: 6px; left: -22px; transform: scaleY(-1); }
+  .fl-br { bottom: 6px; right: -22px; transform: scale(-1, -1); }
+
+  .torn-b { clip-path: polygon(0 0, 100% 0, 100% 96%, 97% 93.5%, 94% 97%, 90% 94%, 86% 97.5%, 82% 94.5%, 78% 97%, 74% 94%, 70% 97.5%, 66% 94.5%, 62% 97%, 58% 94%, 54% 97.5%, 50% 95%, 46% 97%, 42% 94%, 38% 97.5%, 34% 94.5%, 30% 97%, 26% 94%, 22% 97.5%, 18% 94.5%, 14% 97%, 10% 94%, 6% 97.5%, 3% 94.5%, 0 96%); }
+  .torn-both { clip-path: polygon(0 3%, 3% 5.5%, 6% 2.5%, 10% 5%, 14% 2.5%, 18% 5.5%, 22% 2.5%, 26% 5%, 30% 2.5%, 34% 5.5%, 38% 2.5%, 42% 5%, 46% 2.5%, 50% 5.5%, 54% 2.5%, 58% 5%, 62% 2.5%, 66% 5.5%, 70% 2.5%, 74% 5%, 78% 2.5%, 82% 5.5%, 86% 2.5%, 90% 5%, 94% 2.5%, 97% 5.5%, 100% 3%, 100% 96.5%, 97% 94%, 94% 97.5%, 90% 94.5%, 86% 98%, 82% 95%, 78% 97.5%, 74% 94.5%, 70% 98%, 66% 95%, 62% 97.5%, 58% 94.5%, 54% 98%, 50% 95.5%, 46% 97.5%, 42% 94.5%, 38% 98%, 34% 95%, 30% 97.5%, 26% 94.5%, 22% 98%, 18% 95%, 14% 97.5%, 10% 94.5%, 6% 98%, 3% 95%, 0 96.5%); }
+
+  #hero { padding-top: 36px; max-width: 100%; padding-left: 0; padding-right: 0; }
+  .ganesh-mantra { font-family: 'Cormorant Garamond', serif; font-size: 15px; letter-spacing: 0.14em; color: var(--gold-dark); margin: 4px 0 6px; }
+  .shubh-vivah { font-family: 'Cormorant Garamond', serif; font-size: 21px; letter-spacing: 0.2em; color: var(--ink); font-weight: 600; margin: 0 0 14px; }
+  .qrwrap { margin-top: 18px; }
+  .qr { width: 104px; border-radius: 12px; border: 1px solid rgba(185, 140, 46, 0.5); padding: 6px; background: #fff; }
+  .qrcap { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--soft); margin-top: 8px; }
+  #hero .invite { font-size: 13px; color: var(--ink); }
+  #hero .invite .script { font-size: 30px; }
+  #hero .photo { margin: 26px auto 0; max-width: min(100%, 560px); }
+  .archframe { padding: 14px; border: 1px solid var(--gold); border-radius: 50% 50% 16px 16px / 30% 30% 16px 16px; background: #fff; box-shadow: 0 18px 44px rgba(22, 38, 63, 0.16); }
+  .archclip { overflow: hidden; border-radius: 49% 49% 10px 10px / 29% 29% 10px 10px; }
+  #hero .photo img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 30%; display: block; }
+  #hero .names { padding: 18px 22px 0; }
+  #hero h1 { font-weight: 500; font-size: clamp(54px, 12vw, 116px); letter-spacing: 0.03em; line-height: 0.95; color: var(--ink); }
+  #hero h1 .lt { display: inline-block; }
+  #hero .photo img { animation: kenburns 26s ease-in-out infinite alternate; }
+  @keyframes kenburns { from { transform: scale(1); } to { transform: scale(1.05) translateY(-1%); } }
+  @media (max-width: 640px) {
+    #hero h1 { font-size: clamp(42px, 11vw, 116px); }
+    #schedule .grid { gap: 10px; }
+    #schedule .cell { padding: 18px 8px 16px; }
+    #schedule .ev-name { font-size: 27px; }
+    #schedule .ev-time { font-size: 18px; }
+    #schedule .vlink { font-size: 17px; }
+    #hero .when { letter-spacing: 0.18em; font-size: 13px; }
+    .floral { display: none; }
+    .polaroids { flex-wrap: nowrap; gap: 12px; }
+    #kids .polaroid { max-width: 46%; padding: 8px 8px 34px; }
+    #kids .polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+    section { padding: 26px 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .petal, #hero .photo img { animation: none !important; } }
+  #hero h1 .script { font-size: clamp(38px, 7.5vw, 66px); display: block; margin: 6px 0; }
+  #hero .when { margin-top: 10px; font-size: 14px; color: var(--ink); }
+
+  #kids .kids-title { font-size: 15px; }
+  #kids .kids-title .script { font-size: 34px; color: var(--ink); }
+  .polaroids { display: flex; justify-content: center; gap: 22px; margin-top: 20px; flex-wrap: wrap; }
+  .polaroid { background: #fdfaf3; padding: 10px 10px 40px; box-shadow: 0 12px 28px rgba(90, 60, 20, 0.18); border-radius: 4px; position: relative; }
+  .polaroid img { width: 150px; height: 190px; object-fit: cover; display: block; }
+  .polaroid .cap { position: absolute; bottom: 8px; left: 0; right: 0; font-family: 'Alex Brush', cursive; font-size: 24px; color: var(--ink); }
+  .pl { transform: rotate(-4deg); }
+  .pr { transform: rotate(3.5deg); }
+  .heart { width: 26px; display: inline-block; vertical-align: middle; }
+
+  #families p.formal { font-size: 21px; line-height: 1.75; color: var(--ink); }
+  #families .who { font-family: 'Jost', sans-serif; letter-spacing: 0.22em; font-size: 17px; margin: 12px 0 6px; }
+  #families .parents { font-family: 'Jost', sans-serif; letter-spacing: 0.16em; font-size: 13px; color: var(--ink); }
+
+  #datebanner { background: linear-gradient(165deg, #16263f, #0f1a2e); border-radius: 18px; padding-top: 44px; padding-bottom: 44px; margin-left: 12px; margin-right: 12px; box-shadow: 0 18px 44px rgba(22, 38, 63, 0.28); }
+  #datebanner .row { display: flex; align-items: center; justify-content: center; gap: 18px; }
+  #datebanner .side { flex: 1; border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 0; font-family: 'Jost', sans-serif; letter-spacing: 0.3em; font-size: 15px; color: #f3e9d2; }
+  #datebanner .midcol { display: flex; flex-direction: column; align-items: center; }
+  #datebanner .day { font-size: clamp(72px, 17vw, 128px); font-weight: 400; line-height: 0.9; color: #f3e9d2; }
+  #datebanner .year { font-family: 'Jost', sans-serif; letter-spacing: 0.4em; font-size: 15px; margin-top: 8px; color: var(--gold); }
+  #datebanner .wed { margin-top: 14px; font-size: 15px; letter-spacing: 0.22em; color: #d8cba4; }
+
+  .pill { display: inline-block; background: linear-gradient(160deg, #f0e2c0, #dcc79b); border: 1px solid var(--gold); border-radius: 999px; padding: 14px 32px; font-family: 'Jost', sans-serif; letter-spacing: 0.18em; font-size: 13px; color: var(--gold-dark); text-transform: uppercase; box-shadow: 0 8px 20px rgba(150, 110, 30, 0.18); text-decoration: none; }
+  .clickloc { display: block; margin-top: 10px; font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.14em; color: var(--soft); text-decoration: none; }
+
+  #countdown .cd { display: flex; justify-content: center; align-items: flex-start; gap: 4px; margin-top: 8px; font-weight: 300; }
+  #countdown .unit { display: flex; flex-direction: column; align-items: center; min-width: 2.2em; }
+  #countdown .num { font-size: clamp(46px, 11vw, 96px); line-height: 1; }
+  #countdown .colon { font-size: clamp(30px, 6.5vw, 56px); color: var(--soft); line-height: 1; padding-top: clamp(8px, 2vw, 20px); }
+  #countdown .lbl { font-family: 'Jost', sans-serif; font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); margin-top: 8px; }
+
+  #schedule .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px; }
+  #schedule .cell { padding: 24px 14px 20px; position: relative; background: #fffdf7; border: 1px solid rgba(185, 140, 46, 0.45); border-radius: 14px; box-shadow: 0 8px 22px rgba(22, 38, 63, 0.07); }
+  #schedule .ev-name { font-family: 'Alex Brush', cursive; font-size: 40px; color: var(--ink); }
+  #schedule .ev-when { font-family: 'Jost', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.22em; margin-top: 10px; text-transform: uppercase; color: var(--soft); }
+  #schedule .ev-time { font-family: 'Jost', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 0.05em; color: var(--gold-dark); margin-top: 2px; }
+  #schedule .vlink { display: inline-block; margin-top: 10px; font-size: 20px; color: var(--gold-dark); text-decoration: underline; text-underline-offset: 4px; }
+  #schedule .ev-sub { font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.06em; color: var(--gold-dark); margin-top: 6px; }
+  #schedule .icon { width: 66px; height: 66px; margin: 0 auto 8px; display: block; padding: 10px; border: 1px solid rgba(185, 140, 46, 0.55); border-radius: 50%; background: #fff; }
+  @media (max-width: 520px) { #schedule .ev-name { font-size: 24px; } }
+
+  #gallery .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; align-items: start; }
+  #gallery .polaroid { padding: 10px 10px 12px; }
+  #gallery .polaroid img { width: 100%; height: auto; display: block; }
+  #gallery .g1 { transform: rotate(-2.2deg); } #gallery .g2 { transform: rotate(1.8deg); }
+  #gallery .g3 { transform: rotate(1.6deg); } #gallery .g4 { transform: rotate(-2deg); }
+
+  #forever { max-width: 100%; padding-left: 0; padding-right: 0; }
+  #forever .inner { padding: 0 22px; }
+  #forever .strip { margin: 18px 0; }
+  #forever .strip img { width: 100%; height: 44vh; max-height: 460px; object-fit: cover; object-position: 50% 40%; display: block; filter: grayscale(1) contrast(1.05); }
+  #forever .wait { font-size: 14px; line-height: 2; }
+
+  #venue iframe { width: 100%; height: 320px; border: 0; border-radius: 14px; box-shadow: 0 14px 34px rgba(90, 60, 20, 0.16); margin-top: 16px; }
+  #venue .loc-title { font-size: 15px; }
+
+  #rsvp h2 { font-size: clamp(44px, 9vw, 72px); letter-spacing: 0.1em; font-weight: 500; }
+  #rsvp .pill { margin-top: 12px; }
+
+  footer { background: linear-gradient(170deg, #16263f, #0f1a2e); border-top: 1px solid rgba(185, 140, 46, 0.65); text-align: center; padding: 48px 22px 44px; position: relative; }
+  footer .hash { font-family: 'Alex Brush', cursive; font-size: 46px; color: #e6c97a; }
+  footer p { margin-top: 8px; font-size: 18px; color: #cfc3a3; }
+
+  .petal { position: fixed; top: -8vh; z-index: -1; pointer-events: none; border-radius: 60% 40% 60% 40% / 70% 60% 40% 60%; background: linear-gradient(135deg, #f5a623, #e8751a 55%, #c44e0e); opacity: 0; animation: fall linear forwards; }
+  @keyframes fall { 0% { opacity: 0; transform: translateY(-6vh) translateX(0) rotate(0deg); } 8% { opacity: 0.8; } 92% { opacity: 0.8; } 100% { opacity: 0; transform: translateY(108vh) translateX(6vw) rotate(560deg); } }
+</style>
+</head>
+<body>
+
+<div class="topband"></div>
+
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5a623"/><stop offset="1" stop-color="#c44e0e"/></linearGradient></defs></svg>
+
+<section id="hero" class="reveal">
+  <img class="ganesha" src="assets/ganesha.svg" alt="Lord Ganesha motif" style="width:120px;height:auto;margin:0 auto 6px;display:block">
+  <div class="ganesh-mantra">॥ श्री गणेशाय नमः ॥</div>
+  <div class="shubh-vivah">॥ शुभ विवाह ॥</div>
+  <div class="invite caps sans">You are <span class="script">cordially</span> invited to</div>
+  <div class="photo archframe"><div class="archclip"><img src="assets/gallery/p8.jpg" alt="Nirbhay and Riya" style="object-position:50% 25%"></div></div>
+  <div class="names">
+    <div class="caps sans" style="font-size:12px; color:var(--soft)">The wedding of</div>
+    <h1>NIRBHAY<span class="script">and</span>RIYA</h1>
+    <svg class="flourish" viewBox="0 0 220 14"><g stroke="#b98c2e" stroke-width="1"><line x1="0" y1="7" x2="92" y2="7"/><line x1="128" y1="7" x2="220" y2="7"/></g><rect x="104" y="1" width="12" height="12" transform="rotate(45 110 7)" fill="#16263f"/></svg>
+    <div class="when caps sans">05 · 06 · 07 December 2026 &nbsp;·&nbsp; Chandigarh</div>
+    <div class="bless sans">With the divine blessings of<br><span>Late Sh. DP Lakhari &amp; Late Smt. Raj Rani</span></div>
+  </div>
+  <svg class="floral fl-bl" viewBox="0 0 100 100"><g fill="none" stroke="#dccfae" stroke-width="1.6"><path d="M50 30c8-12 26-10 28 2 2 11-9 18-17 15"/><path d="M50 30c-8-12-26-10-28 2-2 11 9 18 17 15"/><circle cx="50" cy="45" r="10"/><path d="M50 55c-10 8-8 22 4 24"/><path d="M50 55c10 8 8 22-4 24"/><path d="M30 70c-8 6-20 2-22-8"/><path d="M70 70c8 6 20 2 22-8"/><path d="M50 79v14"/><path d="M42 88c4 4 12 4 16 0"/></g></svg>
+</section>
+
+<section id="kids" class="reveal">
+  <div class="kids-title caps sans">These kids are<br><span class="script">getting married!</span></div>
+  <div class="polaroids">
+    <div class="polaroid pl"><img src="assets/nirbhay-child.jpg" alt="Nirbhay childhood"><div class="cap">Nirbhay</div></div>
+    <div class="polaroid pr"><img src="assets/riya-child.jpg" alt="Riya childhood"><div class="cap">Riya</div></div>
+  </div>
+  <div style="margin-top:12px">
+    <svg class="heart" viewBox="0 0 32 30"><path d="M16 28C8 21 2 15 2 9 2 4 6 1 10 1c2.5 0 4.7 1.3 6 3.3C17.3 2.3 19.5 1 22 1c4 0 8 3 8 8 0 6-6 12-14 19z" fill="#e58aa0" opacity="0.85"/></svg>
+    <svg class="heart" viewBox="0 0 32 30"><path d="M16 28C8 21 2 15 2 9 2 4 6 1 10 1c2.5 0 4.7 1.3 6 3.3C17.3 2.3 19.5 1 22 1c4 0 8 3 8 8 0 6-6 12-14 19z" fill="#d76b85" opacity="0.85"/></svg>
+  </div>
+  <svg class="floral fl-tl" viewBox="0 0 100 100"><g fill="none" stroke="#dccfae" stroke-width="1.6"><path d="M50 30c8-12 26-10 28 2 2 11-9 18-17 15"/><path d="M50 30c-8-12-26-10-28 2-2 11 9 18 17 15"/><circle cx="50" cy="45" r="10"/><path d="M50 55c-10 8-8 22 4 24"/><path d="M50 55c10 8 8 22-4 24"/><path d="M30 70c-8 6-20 2-22-8"/><path d="M70 70c8 6 20 2 22-8"/><path d="M50 79v14"/><path d="M42 88c4 4 12 4 16 0"/></g></svg>
+</section>
+
+<section id="families" class="reveal">
+  <p class="formal">Mr. Sanjiv Aggarwal &amp; Mrs. Krishna Aggarwal<br>request the pleasure of your company<br>to celebrate the wedding of their son</p>
+  <div class="who sans">NIRBHAY AGGARWAL</div>
+  <div class="caps sans" style="font-size:12px; color:var(--soft)">with</div>
+  <div class="who sans">RIYA GUPTA</div>
+  <div class="parents sans">D/O MR. NIKESH GUPTA &amp; MRS. SANGEETA GUPTA</div>
+</section>
+
+<section id="datebanner" class="reveal">
+  <div class="row">
+    <div class="side">Sunday</div>
+    <div class="midcol">
+      <div class="day">07</div>
+      <div class="year sans">2026</div>
+    </div>
+    <div class="side">December</div>
+  </div>
+  <div class="wed caps sans">Wedding at sundown · Noura, The Palace, Chandigarh</div>
+  <div style="margin-top:24px">
+    <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Noura, The Palace · Chandigarh</a>
+    <a class="clickloc" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Click for location</a>
+  </div>
+</section>
+
+<section id="countdown" class="reveal">
+  <div class="eyebrow caps sans">The time left until the</div>
+  <div class="script" style="font-size:40px">wedding</div>
+  <div class="cd">
+    <div class="unit"><span class="num" id="cd-d">--</span><span class="lbl">Days</span></div><span class="colon">:</span>
+    <div class="unit"><span class="num" id="cd-h">--</span><span class="lbl">Hours</span></div><span class="colon">:</span>
+    <div class="unit"><span class="num" id="cd-m">--</span><span class="lbl">Minutes</span></div><span class="colon">:</span>
+    <div class="unit"><span class="num maroon" id="cd-s">--</span><span class="lbl">Seconds</span></div>
+  </div>
+</section>
+
+<section id="schedule" class="reveal">
+  <h2 class="big">CEREMONIAL DETAILS</h2>
+  <div class="grid">
+    <div class="cell">
+      <svg class="icon" viewBox="0 0 64 64"><g fill="none" stroke="#16263f" stroke-width="1.8"><circle cx="32" cy="32" r="12"/><circle cx="32" cy="32" r="3" fill="#b98c2e" stroke="none"/><g><ellipse cx="32" cy="12" rx="4" ry="7"/><ellipse cx="32" cy="52" rx="4" ry="7"/><ellipse cx="12" cy="32" rx="7" ry="4"/><ellipse cx="52" cy="32" rx="7" ry="4"/><ellipse cx="18" cy="18" rx="5" ry="3" transform="rotate(-45 18 18)"/><ellipse cx="46" cy="18" rx="5" ry="3" transform="rotate(45 46 18)"/><ellipse cx="18" cy="46" rx="5" ry="3" transform="rotate(45 18 46)"/><ellipse cx="46" cy="46" rx="5" ry="3" transform="rotate(-45 46 46)"/></g></g></svg>
+      <div class="ev-name">Mehendi</div>
+      <div class="ev-when sans">Fri · 05 Dec</div>
+      <div class="ev-time sans">7:00 PM</div>
+      <a class="vlink" href="https://www.google.com/maps/search/?api=1&query=Radisson+Zirakpur" target="_blank" rel="noopener">Radisson, Zirakpur</a>
+      <a class="clickloc" href="https://www.google.com/maps/search/?api=1&query=Radisson+Zirakpur" target="_blank" rel="noopener">Click for location</a>
+    </div>
+    <div class="cell">
+      <svg class="icon" viewBox="0 0 64 64"><g fill="none" stroke="#16263f" stroke-width="1.8"><path d="M14 34h36c0 10-8 18-18 18s-18-8-18-18z"/><path d="M20 34c2-8 8-12 12-12s10 4 12 12" fill="#f3e5c3"/><circle cx="26" cy="26" r="1.6" fill="#b98c2e" stroke="none"/><circle cx="33" cy="23" r="1.6" fill="#b98c2e" stroke="none"/><circle cx="39" cy="27" r="1.6" fill="#b98c2e" stroke="none"/><path d="M50 14l3 3M53 11l3 3" stroke="#b98c2e"/></g></svg>
+      <div class="ev-name">Haldi</div>
+      <div class="ev-when sans">Sat · 06 Dec</div>
+      <div class="ev-time sans">11:00 AM</div>
+      <a class="vlink" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Noura, The Palace, Chandigarh</a>
+      <a class="clickloc" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Click for location</a>
+    </div>
+    <div class="cell">
+      <svg class="icon" viewBox="0 0 64 64"><g fill="none" stroke="#16263f" stroke-width="1.8"><circle cx="26" cy="36" r="11"/><circle cx="40" cy="36" r="11"/><path d="M26 25l-4-8h8l-4 8zM40 25l-4-8h8l-4 8z" fill="#f3e5c3"/><path d="M22 17l-3-3M43 17l3-3" stroke="#b98c2e"/></g></svg>
+      <div class="ev-name">Ring Ceremony &amp; Sangeet</div>
+      <div class="ev-when sans">Sat · 06 Dec</div>
+      <div class="ev-time sans">7:00 PM</div>
+      <a class="vlink" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Noura, The Palace, Chandigarh</a>
+      <a class="clickloc" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Click for location</a>
+    </div>
+    <div class="cell">
+      <svg class="icon" viewBox="0 0 64 64"><g fill="none" stroke="#16263f" stroke-width="1.8"><path d="M18 30h28l-3 20c-.3 3-2.7 5-6 5H27c-3.3 0-5.7-2-6-5l-3-20z" fill="#f3e5c3"/><ellipse cx="32" cy="30" rx="14" ry="3.5"/><circle cx="32" cy="20" r="5"/><path d="M32 15c-2-5-8-7-12-5M32 15c2-5 8-7 12-5" /><path d="M26 40h12" stroke="#b98c2e"/></g></svg>
+      <div class="ev-name">Wedding</div>
+      <div class="ev-when sans">Sun · 07 Dec</div>
+      <div class="ev-time sans">5:00 PM</div>
+      <div class="ev-sub sans">Varmala 6:00 PM · Pheras 7:30 PM</div>
+      <a class="vlink" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Noura, The Palace, Chandigarh</a>
+      <a class="clickloc" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Click for location</a>
+    </div>
+  </div>
+  <svg class="floral fl-tr" viewBox="0 0 100 100"><g fill="none" stroke="#dccfae" stroke-width="1.6"><path d="M50 30c8-12 26-10 28 2 2 11-9 18-17 15"/><path d="M50 30c-8-12-26-10-28 2-2 11 9 18 17 15"/><circle cx="50" cy="45" r="10"/><path d="M50 55c-10 8-8 22 4 24"/><path d="M50 55c10 8 8 22-4 24"/><path d="M30 70c-8 6-20 2-22-8"/><path d="M70 70c8 6 20 2 22-8"/><path d="M50 79v14"/><path d="M42 88c4 4 12 4 16 0"/></g></svg>
+</section>
+
+<section id="gallery" class="reveal">
+  <div class="eyebrow caps sans">Moments to remember</div>
+  <div class="grid">
+    <div class="polaroid g1"><img src="assets/gallery/p1.jpg" alt="Nirbhay and Riya"></div>
+    <div class="polaroid g2"><img src="assets/gallery/p2.jpg" alt="Nirbhay and Riya"></div>
+    <div class="polaroid g3"><img src="assets/gallery/p3.jpg" alt="Nirbhay and Riya"></div>
+  </div>
+</section>
+
+<section id="forever" class="reveal">
+  <div class="inner">
+    <div class="caps sans" style="font-size:14px">Be the part of our <span class="script" style="font-size:38px">forever</span></div>
+  </div>
+  <div class="strip torn-both"><img src="assets/gallery/p4.jpg" alt="Nirbhay and Riya holding hands"></div>
+  <div class="inner">
+    <div class="wait caps sans">We can't wait to see you at our wedding.<br>Let's make memories together!</div>
+  </div>
+  <svg class="floral fl-br" viewBox="0 0 100 100"><g fill="none" stroke="#dccfae" stroke-width="1.6"><path d="M50 30c8-12 26-10 28 2 2 11-9 18-17 15"/><path d="M50 30c-8-12-26-10-28 2-2 11 9 18 17 15"/><circle cx="50" cy="45" r="10"/><path d="M50 55c-10 8-8 22 4 24"/><path d="M50 55c10 8 8 22-4 24"/><path d="M30 70c-8 6-20 2-22-8"/><path d="M70 70c8 6 20 2 22-8"/><path d="M50 79v14"/><path d="M42 88c4 4 12 4 16 0"/></g></svg>
+</section>
+
+<section id="venue" class="reveal">
+  <div class="loc-title caps sans"><span class="script" style="font-size:40px">Location</span> &nbsp;of the wedding</div>
+  <iframe title="Noura, The Palace, Chandigarh — map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Noura%20The%20Palace%20Chandigarh&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+  <div style="margin-top:20px">
+    <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Noura+The+Palace+Chandigarh" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+  <div class="qrwrap">
+    <img src="assets/qr-venue.png" class="qr" alt="QR code — scan for directions to Noura, The Palace">
+    <div class="qrcap sans">Scan for directions</div>
+  </div>
+</section>
+
+<section id="rsvp" class="reveal">
+  <h2>RSVP</h2>
+  <div class="eyebrow caps sans" style="margin-top:6px">Kindly respond to</div>
+  <div><span class="pill">Aggarwal Family</span></div>
+  <svg class="floral fl-bl" viewBox="0 0 100 100"><g fill="none" stroke="#dccfae" stroke-width="1.6"><path d="M50 30c8-12 26-10 28 2 2 11-9 18-17 15"/><path d="M50 30c-8-12-26-10-28 2-2 11 9 18 17 15"/><circle cx="50" cy="45" r="10"/><path d="M50 55c-10 8-8 22 4 24"/><path d="M50 55c10 8 8 22-4 24"/><path d="M30 70c-8 6-20 2-22-8"/><path d="M70 70c8 6 20 2 22-8"/><path d="M50 79v14"/><path d="M42 88c4 4 12 4 16 0"/></g></svg>
+</section>
+
+<footer>
+  <div class="hash">#NiRi</div>
+  <p>With love &amp; warmest wishes — Nirbhay &amp; Riya</p>
+</footer>
+
+<script>
+  window.addEventListener('load', startPetals);
+
+  var target = new Date('2026-12-05T00:00:00+05:30').getTime();
+  function tick() {
+    var d = target - Date.now();
+    if (d < 0) d = 0;
+    document.getElementById('cd-d').textContent = Math.floor(d / 864e5);
+    document.getElementById('cd-h').textContent = ('0' + Math.floor(d / 36e5) % 24).slice(-2);
+    document.getElementById('cd-m').textContent = ('0' + Math.floor(d / 6e4) % 60).slice(-2);
+    document.getElementById('cd-s').textContent = ('0' + Math.floor(d / 1e3) % 60).slice(-2);
+  }
+  tick(); setInterval(tick, 1000);
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+  function startPetals() {
+    var mobile = window.innerWidth < 640;
+    setInterval(function () {
+      if (document.hidden) return;
+      var p = document.createElement('div');
+      p.className = 'petal';
+      var s = (mobile ? 6 : 8) + Math.random() * (mobile ? 9 : 13);
+      p.style.width = s + 'px';
+      p.style.height = s * 1.45 + 'px';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = 8 + Math.random() * 6 + 's';
+      document.body.appendChild(p);
+      setTimeout(function () { p.remove(); }, 15000);
+    }, mobile ? 2600 : 1600);
+  }
+
+  function splitLetters(el) {
+    Array.from(el.childNodes).forEach(function (n) {
+      if (n.nodeType === 3) {
+        var frag = document.createDocumentFragment();
+        n.textContent.split('').forEach(function (ch) {
+          var s = document.createElement('span');
+          s.className = 'lt';
+          s.textContent = ch;
+          frag.appendChild(s);
+        });
+        el.replaceChild(frag, n);
+      }
+    });
+  }
+  splitLetters(document.querySelector('#hero h1'));
+
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('#hero .invite', {opacity: 0, y: 24, duration: 1, ease: 'power3.out'});
+    gsap.from('#hero h1 .lt', {opacity: 0, y: 26, duration: 1.1, ease: 'power2.out', stagger: 0.045, delay: 0.25});
+    gsap.from('#hero h1 .script, #hero .when', {opacity: 0, y: 18, duration: 1, stagger: 0.15, delay: 0.85});
+    gsap.fromTo('#forever .strip img', {yPercent: -4, scale: 1.05}, {yPercent: 4, scale: 1.05, ease: 'none', scrollTrigger: {trigger: '#forever .strip', start: 'top bottom', end: 'bottom top', scrub: 1}});
+    gsap.from('#kids .polaroid', {opacity: 0, y: 28, duration: 1.1, ease: 'power2.out', stagger: 0.14, immediateRender: false, scrollTrigger: {trigger: '#kids', start: 'top 78%'}});
+    gsap.from('#countdown .num', {opacity: 0, y: 22, duration: 1, ease: 'power2.out', stagger: 0.1, immediateRender: false, scrollTrigger: {trigger: '#countdown', start: 'top 75%'}});
+    gsap.from('#schedule .cell', {opacity: 0, y: 26, duration: 1.1, ease: 'power2.out', stagger: 0.14, immediateRender: false, scrollTrigger: {trigger: '#schedule', start: 'top 75%'}});
+    gsap.from('#gallery .polaroid', {opacity: 0, y: 34, duration: 1.1, ease: 'power2.out', stagger: 0.12, immediateRender: false, scrollTrigger: {trigger: '#gallery', start: 'top 75%'}});
+    gsap.from('#rsvp .pill, #rsvp h2', {opacity: 0, y: 22, duration: 1, ease: 'power2.out', stagger: 0.12, immediateRender: false, scrollTrigger: {trigger: '#rsvp', start: 'top 80%'}});
+  }
+</script>
+</body>
+</html>
